@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Password = (EditText)findViewById(R.id.etPassword);
         Info = (TextView)findViewById(R.id.tvInfo);
         Login = (Button)findViewById(R.id.btnLogin);
-        etRegister = (TextView)findViewById(R.id.etRegister);
+        etRegister = (Button)findViewById(R.id.registerBtn);
 
         Info.setText("Chances left: 3");
 
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 break;
 
-                case R.id.etRegister:
+                case R.id.registerBtn:
                  startActivity(new Intent(this, RegisterActivity.class));
                 break;
         }

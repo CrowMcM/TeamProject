@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
+    android:background="@drawable/gradient"
     tools:context=".MainActivity">
 
     <EditText
         android:id="@+id/etName"
+        style="@style/Widget.AppCompat.EditText"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="21dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
@@ -22,7 +23,7 @@
         android:hint="Name"
         android:inputType="textPersonName"
         android:textColor="@android:color/white"
-        android:textStyle="bold"
+        android:textColorHint="#ffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,6 +43,7 @@
         android:background="@color/colorPrimary"
         android:ems="10"
         android:hint="Password"
+        android:textColorHint="#ffff"
         android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -61,6 +63,8 @@
         android:layout_marginBottom="8dp"
         android:background="@color/colorPrimary"
         android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="#ffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -78,16 +82,17 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:background="@color/colorPrimary"
-        android:text="Chances left: "
+        android:text="  Chances left: "
+        android:textColor="#ffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnLogin"
         app:layout_constraintVertical_bias="0.087" />
 
-    <EditText
-        android:id="@+id/etRegister"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="230dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
@@ -96,13 +101,11 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:background="@color/colorPrimary"
-        android:ems="10"
-        android:hint="register Here"
-        android:inputType="textPassword"
+        android:text="Register Here"
+        android:textColor="#ffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etName"
-        app:layout_constraintVertical_bias="0.63" />
+        app:layout_constraintTop_toBottomOf="@+id/tvInfo" />
 
 </android.support.constraint.ConstraintLayout>
