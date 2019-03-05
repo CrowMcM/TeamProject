@@ -32,6 +32,12 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         switch(v.getId()){
             case R.id.btnRegister:
 
+                String name = etName.getText().toString();
+                String Username = etUserName.getText().toString();
+                String password = etPassword.getText().toString();
+                int age = Integer.parseInt(etAge.getText().toString());
+
+                 Customers registeredData = new Customers(name, age, Username, password);
 
             break;
         }

@@ -17,6 +17,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private int counter =3;
     TextView etRegister;
 
+    CustomerLocalStore customerLocalStore;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,13 +42,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         });
 
         etRegister.setOnClickListener(this);
+        customerLocalStore = new CustomerLocalStore(this);
 
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.btnLogout:
+            case R.id.btnLogin:
+
+                Customers customer = new Customers(null, null);
+                customerLocalStore.storeCustomersData(customer);
+                customerLocalStore.setLoggedInCustomer(true);
 
                 break;
 
