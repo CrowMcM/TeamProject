@@ -18,7 +18,7 @@
     android:layout_width="match_parent"
     android:layout_height="?android:attr/listPreferredItemHeightSmall">
     
-    <!-- Icon will be inserted here. -->
+    <!-- icon will be inserted here. -->
     
     <!-- The title and summary have some gap between them, and this 'group' should be centered vertically. -->
     <RelativeLayout

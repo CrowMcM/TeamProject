@@ -37,7 +37,7 @@
         android:paddingEnd="16dip"
         android:duplicateParentState="true" >
 
-        <!-- Icon will be inserted here. -->
+        <!-- icon will be inserted here. -->
 
         <TextView
             android:id="@+id/title"

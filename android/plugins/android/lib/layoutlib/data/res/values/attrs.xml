@@ -608,7 +608,7 @@
              preference fragment. -->
         <attr name="detailsElementBackground" format="reference" />
 
-        <!-- Icon that should be used to indicate that an app is waiting for a fingerprint scan.
+        <!-- icon that should be used to indicate that an app is waiting for a fingerprint scan.
              This should be used whenever an app is requesting the user to place a finger on the
              fingerprint sensor. It can be combined with other drawables such as colored circles, so
              the appearance matches the branding of the app requesting the fingerprint scan.-->
@@ -989,7 +989,7 @@
 
         <!-- Theme to use for alert dialogs spawned from this theme. -->
         <attr name="alertDialogTheme" format="reference" />
-        <!-- Icon drawable to use for alerts. -->
+        <!-- icon drawable to use for alerts. -->
         <attr name="alertDialogIcon" format="reference" />
 
         <!-- Theme to use for presentations spawned from this theme. -->
@@ -8013,7 +8013,7 @@
     <declare-styleable name="ContactsDataKind">
         <!-- Mime-type handled by this mapping. -->
         <attr name="mimeType" />
-        <!-- Icon used to represent data of this kind. -->
+        <!-- icon used to represent data of this kind. -->
         <attr name="icon" />
         <!-- Column in data table that summarizes this data. -->
         <attr name="summaryColumn" format="string" />
@@ -8463,7 +8463,7 @@
         <attr name="layout" />
         <!-- The layout for the Preference Header. This should rarely need to be changed. -->
         <attr name="headerLayout" format="reference" />
-        <!-- true if the Icon view will be removed when there is none and thus not showing
+        <!-- true if the icon view will be removed when there is none and thus not showing
              the fixed margins. -->
         <attr name="headerRemoveIconIfEmpty" format="boolean" />
     </declare-styleable>
@@ -8613,14 +8613,14 @@
             <!-- Push object to the bottom of its container, not changing its size. -->
             <flag name="bottom" value="0x50" />
         </attr>
-        <!-- Icon drawable to use for the collapse button. -->
+        <!-- icon drawable to use for the collapse button. -->
         <attr name="collapseIcon" format="reference" />
         <!-- Text to set as the content description for the collapse button. -->
         <attr name="collapseContentDescription" format="string" />
         <!-- Reference to a theme that should be used to inflate popups
              shown by widgets in the toolbar. -->
         <attr name="popupTheme" format="reference" />
-        <!-- Icon drawable to use for the navigation button located at
+        <!-- icon drawable to use for the navigation button located at
              the start of the toolbar. -->
         <attr name="navigationIcon" format="reference" />
         <!-- Text to set as the content description for the navigation button

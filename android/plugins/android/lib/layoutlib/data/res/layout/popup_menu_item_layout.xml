@@ -35,7 +35,7 @@
         android:paddingEnd="16dip"
         android:duplicateParentState="true" >
 
-        <!-- Icon will be inserted here. -->
+        <!-- icon will be inserted here. -->
 
         <!-- The title and summary have some gap between them,
         and this 'group' should be centered vertically. -->

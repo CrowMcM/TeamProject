@@ -39,6 +39,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
                  Customers registeredData = new Customers(name, age, Username, password);
 
+
             break;
         }
     }
