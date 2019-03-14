@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private EditText UserName;
@@ -16,6 +18,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button Login;
     private int counter =3;
     TextView etRegister;
+
 
     CustomerLocalStore customerLocalStore;
 
@@ -62,6 +65,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
         }
     }
+
+
 
     private void validate(String userName, String userPassword){
         if((userName.equals("AlexP")) && (userPassword.equals("AlexH"))){
