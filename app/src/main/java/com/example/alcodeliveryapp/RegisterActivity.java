@@ -1,5 +1,6 @@
 package com.example.alcodeliveryapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -39,6 +40,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
                  Customers registeredData = new Customers(name, age, Username, password);
 
+                startActivity(new Intent(this, MainActivity.class));
 
             break;
         }

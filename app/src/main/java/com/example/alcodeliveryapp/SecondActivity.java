@@ -42,11 +42,12 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
                 switch (v.getId()) {
                     case R.id.btnLogout:
 
+                        startActivity(new Intent(this, MainActivity.class));
+
                         customerLocalStore.clearCustomersData();
                         customerLocalStore.setLoggedInCustomer(false);
 
 
-                        startActivity(new Intent(this, MainActivity.class));
                         break;
         }
     }
